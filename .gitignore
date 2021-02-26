@@ -1,4 +1,7 @@
+# Node modules
 /node_modules
-package.json
+# Yarn
 yarn.lock
+yarn-error.log
+# Configuration file
 /src/app/config/discord/credentials.json
