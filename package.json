@@ -6,7 +6,15 @@
   "repository": "https://github.com/raulpm95/discorBot.git",
   "author": "raulpm95",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon start index.js"
+  },
   "dependencies": {
+    "discord.js": "^12.5.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
