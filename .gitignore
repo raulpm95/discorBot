@@ -4,4 +4,4 @@
 yarn.lock
 yarn-error.log
 # Configuration file
-/src/app/config/discord/credentials.json
+/src/app/config/discord/*
