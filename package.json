@@ -1,24 +1,12 @@
 {
-  "name": "discorbot",
+  "name": "discorBot",
   "version": "1.0.0",
   "description": "Bot to use in discord",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raulpm95/discorBot.git"
-  },
-  "keywords": [
-    "Discord",
-    "Bot",
-    "NodeJS"
-  ],
-  "author": "rpm",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/raulpm95/discorBot/issues"
-  },
-  "homepage": "https://github.com/raulpm95/discorBot#readme"
+  "repository": "https://github.com/raulpm95/discorBot.git",
+  "author": "raulpm95",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
