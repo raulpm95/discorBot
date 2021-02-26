@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # Discord config
-src/app/config/discord/config.json
+/src/app/config/discord/config.json
