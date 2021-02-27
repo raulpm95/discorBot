@@ -17,11 +17,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install dependencies
         run: |
-          cd ../../../../..
+          cd ../../../../../
           npm install
-      - name: Unit test
-        run: 
           npm test
-      - name: Remove dependencies
-        run: rm -rf node_modules
+          rm -rf node_modules
           
