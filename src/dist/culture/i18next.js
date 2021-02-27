@@ -21,6 +21,11 @@ function getCurrentLanguage () {
     return i18next.language;
 }
 
+function changeLanguage (language) {
+    i18next.changeLanguage(language);
+}
+
 exports.startTranslation = startTranslation;
 exports.translate = translate;
 exports.getCurrentLanguage = getCurrentLanguage;
+exports.changeLanguage= changeLanguage;
