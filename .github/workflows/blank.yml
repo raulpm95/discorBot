@@ -17,6 +17,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Unit test
         run: |
-          npm install,
-          npm run test,
+          npm install
+          npm run test
           rm -R node_modules
