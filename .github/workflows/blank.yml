@@ -17,4 +17,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Unit test
         run: |
-          yarn test
+          yarn,
+          yarn test,
+          rm -R node_modules
