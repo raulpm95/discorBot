@@ -5,17 +5,24 @@ name: CI
 # Controls when the action will run. 
 on: push
  
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   test:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    name: Test on node ${{ matrix.node }} and ${{ matrix.os }}
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node: [8, 10, 12]
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+
     steps:
-      # Runs a set of commands using the runners shell
-      - name: Unit test
-        run: |
-          npm test
-          
+      - uses: actions/checkout@v1      - name: Use node ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+          registry-url: https://registry.npmjs.org      - name: install
+        run: npm install      - name: lint
+        run: npm run lint      - name: build
+        run: npm run build      - name: test
+        run: npm test
