@@ -16,7 +16,7 @@ jobs:
     steps:
       # Runs a set of commands using the runners shell
       - name: Install dependencies
-        run: 
+        run: |
            cd ../../../../..
           npm install
       - name: Unit test
