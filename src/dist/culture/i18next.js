@@ -17,5 +17,10 @@ function translate (key) {
     return i18next.t(key);
 }
 
+function getCurrentLanguage () {
+    return i18next.language;
+}
+
 exports.startTranslation = startTranslation;
 exports.translate = translate;
+exports.getCurrentLanguage = getCurrentLanguage;
