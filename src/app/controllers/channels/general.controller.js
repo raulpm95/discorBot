@@ -10,18 +10,18 @@ function isChannelReady () {
     return generalChannel !== null;
 }
 
-function sayHelloToGeneral () {
-    if (isChannelReady) generalChannel.send(EspCulture.GENERAL_WELCOME_TO_ALL);
+function sayHelloToGeneral (t) {
+    if (isChannelReady) generalChannel.send(t("GENERAL.WELCOME_TO_ALL"));
 }
 
-function handleMessage (message) {
+function handleMessage (message, t) {
     if (isChannelReady) {
         switch (message.toLowerCase()) {
             case "hola":
-                generalChannel.send(EspCulture.GENERAL_SAY_HELLO);
+                generalChannel.send(t("GENERAL.SAY_HELLO"));
                 break;
             case "buenos dias":
-                generalChannel.send(EspCulture.GENERAL_SAY_GOODMORNING);
+                generalChannel.send(t("GENERAL.SAY_GOODMORNING"));
                 break;
             default:
                 break;

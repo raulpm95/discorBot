@@ -7,15 +7,15 @@ function startBot () {
     client.login(config.TOKEN);
 }
 
-function getReady () {
+function getReady (t) {
     client.on("ready", () => {
         GeneralChannelController.catchGeneralChannel(client);
         if (GeneralChannelController.isChannelReady()) {
-            GeneralChannelController.sayHelloToGeneral();
+            GeneralChannelController.sayHelloToGeneral(t);
         }
     })
     client.on("message", message => {
-        GeneralChannelController.handleMessage(message.content);
+        GeneralChannelController.handleMessage(message.content, t);
     })
 }
 
