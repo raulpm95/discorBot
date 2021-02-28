@@ -3,5 +3,14 @@
         "WELCOME_TO_ALL": "Hello to all the general channel",
         "SAY_HELLO": "Hello, welcome to general channel",
         "SAY_GOODMORNING": "Good morning to general channel"
+    },
+    "VALIDATION": {
+        "IS_VALID_COMMAND": "Valid command",
+        "INVALID_COMMAND": "Invalid command",
+        "SETCULTURE_ARGS": "You have to send a language",
+        "NOT_AVALIABLE_LANGUAGE": "You only can set the language to english (en) or spanish (es)"
+    },
+    "COMPLETE": {
+        "SET_CULTURE": "Language changed"
     }
 }

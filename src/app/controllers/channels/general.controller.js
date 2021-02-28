@@ -1,5 +1,4 @@
 const channelsIds = require("../../config/discord/channels.json");
-const EspCulture = require("../../config/culture/es/translate.json")
 var generalChannel = null;
 
 function catchGeneralChannel (client) {
