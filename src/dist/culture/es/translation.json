@@ -1,0 +1,16 @@
+{
+    "GENERAL": {
+        "WELCOME_TO_ALL": "Hola a todo el canal general",
+        "SAY_HELLO": "Hola, bienvenido al canal general",
+        "SAY_GOODMORNING": "Buenos dias al canal general"
+    },
+    "VALIDATION": {
+        "IS_VALID_COMMAND": "Comando válido",
+        "INVALID_COMMAND": "Comando no válido",
+        "SETCULTURE_ARGS": "Idioma no indicado",
+        "NOT_AVALIABLE_LANGUAGE": "Solo puedes cambiar entre el idioma ingles (en) y el español (es)"
+    },
+    "COMPLETE": {
+        "SET_CULTURE": "Idioma cambiado"
+    }
+}

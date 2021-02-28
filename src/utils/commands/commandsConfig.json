@@ -1,0 +1,7 @@
+{
+    "/setCulture": {
+        "id": 0,
+        "description": "Change the bot culture",
+        "example": "/setCulture es"
+    }
+}
